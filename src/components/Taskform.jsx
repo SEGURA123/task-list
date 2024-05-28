@@ -17,8 +17,8 @@ export default function Taskform() {
   return (
     <form onSubmit={handleSubmit}>
       <h1>Añadir Tarea</h1>
-      <input type="text" placeholder="titulo" value={title} onChange={handleChangeTitle} autoFocus /><br />
-      <textarea placeholder="descripcion" value={description} onChange={handleChangeDescription}></textarea>
+      <input type="text" id='1' placeholder="titulo" value={title} onChange={handleChangeTitle} autoFocus /><br />
+      <textarea id='2' placeholder="descripcion" value={description} onChange={handleChangeDescription}></textarea>
       <br /><button>Añadir</button>
     </form>
   )
