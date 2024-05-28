@@ -4,7 +4,6 @@ import { tasks as data } from '../data/tasks'
 
 export const Taskcontext = createContext()
 
-// Este es el contexto de mi aplicacion
 export default function Taskcontextprovider({ children }) {
   const [tasks, setTasks] = useState([])
   const [id, setId] = useState(0)
