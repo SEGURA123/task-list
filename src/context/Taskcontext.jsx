@@ -1,4 +1,5 @@
 import { useState, useEffect, createContext } from 'react'
+import PropTypes from 'prop-types'
 import { tasks as data } from '../data/tasks'
 
 export const Taskcontext = createContext()
@@ -53,4 +54,7 @@ export default function Taskcontextprovider({ children }) {
       {children}
     </Taskcontext.Provider>
   )
+}
+Taskcontextprovider.propTypes = {
+  children: PropTypes.node
 }
